@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Simulador de Tareas Diarias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TaskFlow</h1>
+        <p>Organiza tus tareas diarias</p>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Escribe una nueva tarea..." required>
+                <button type="submit" id="add-btn">Agregar</button>
+            </form>
+        </section>
+
+        <section id="tasks-section">
+            <div class="tasks-header">
+                <h2>Mis Tareas</h2>
+                <p id="pending-counter">Tareas pendientes: 0</p>
+            </div>
+
+            <ul id="task-list" class="task-list">
+            </ul>
+
+            <button id="clear-completed-btn">Eliminar completadas</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TaskFlow. Proyecto académico.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
